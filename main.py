@@ -48,7 +48,7 @@ from libs.trading_room import *
 ##############################
 
 
-DEFAULT_FILE = "datas/croissance.csv"
+DEFAULT_FILE = "datas/test_ohlc.csv"
 
 
 
