@@ -7,21 +7,11 @@ from __future__ import absolute_import, division
 ##############################
 ##############################
 
-# 	 beta_backtrader v1.0
+#	beta_backtrader v1.0.0
 
 ##############################
 ##############################
 
-
-desc = """
-beta_backtrader is a backtader written in python, for python beginers and focus
-on fast, simple and easy usage. It proposes a very high level OOP approch
-helping non programming experts to use it.
-
-v 1.0
-author Alexandre GAZAGNES
-last update : 22/03/18
-"""
 
 
 ##############################
@@ -49,6 +39,7 @@ from libs.trading_room import *
 
 
 DEFAULT_FILE = "datas/test_ohlc.csv"
+
 
 
 
@@ -83,19 +74,13 @@ def add_indicators():
 	# ds.add_cross("close_30_ema", "close_60_ema")
 
 
-def proto_strat():
-	buy = list(ds.rsi_10 < 30)
-	sell = 60 * [False, ] + list(buy)[0:-10]
-	ds.add_orders(buy, sell)
-
-
 def control_prints(ds):
 	u"""put in there your controls prints
 	positional args :   - 
 	optional args :     - 
 	return :            - but print in cli resquested outputs
 	"""
-
+	
 	print(ds.head(10))
 	print(ds.tail(10))
 
