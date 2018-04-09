@@ -11,11 +11,7 @@
 
 
 
-# hhuiefuiaefzueofea
-# fazilfauefaozffazf
-# jfizafziafuafziaofa
-# fzailflizeoafa
-# fhaiufiozfeafoa"""
+# this is the object reprentation of a broker see doctstring bellow for full information
 
 
 
@@ -101,6 +97,8 @@ class Broker(object):
 #   MAIN
 #########################
 
+
+# default unitest work when ./broker.py called in CLI
 
 if __name__ == '__main__':
 

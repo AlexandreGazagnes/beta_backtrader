@@ -11,11 +11,8 @@
 
 
 
-# hhuiefuiaefzueofea
-# fazilfauefaozffazf
-# jfizafziafuafziaofa
-# fzailflizeoafa
-# fhaiufiozfeafoa"""
+# this is the object reprentation of a user agent see doctstring bellow for full information
+
 
 
 
@@ -25,6 +22,12 @@
 
 
 class User : 
+	u""" user representation 
+	TO DO : add positional and optional args, return statement
+		describe more detail infromation about user integration in main
+		add vision, agressivity and mood feature of user 
+	"""
+
 	def __init__(self, bank, ruined_rate) : 
 		self.bank = bank
 		self.ruined_rate = ruined_rate
