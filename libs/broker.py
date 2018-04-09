@@ -98,6 +98,8 @@ class Broker(object):
 #########################
 
 
+# default unitest work when ./broker.py called in CLI
+
 if __name__ == '__main__':
 
     # broker = Broker("mad_broker", 0.1, 0.005, 0.01)
