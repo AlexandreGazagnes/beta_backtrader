@@ -11,11 +11,7 @@
 
 
 
-# hhuiefuiaefzueofea
-# fazilfauefaozffazf
-# jfizafziafuafziaofa
-# fzailflizeoafa
-# fhaiufiozfeafoa"""
+# this is the object reprentation of a broker see doctstring bellow for full information
 
 
 
