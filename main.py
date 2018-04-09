@@ -7,7 +7,7 @@ from __future__ import absolute_import, division
 ##############################
 ##############################
 
-#	beta_backtrader v1.0.0
+#  beta_backtrader v1.0.0
 
 ##############################
 ##############################
@@ -34,16 +34,16 @@ from libs.trading_room import *
 
 
 ##############################
-#		CONSTANTS
+#  CONSTANTS
 ##############################
 
 
-DEFAULT_FILE = "datas/test.csv"
+DEFAULT_FILE = "datas/test_ohlc.csv"
 
 
 
 ##############################
-#		FUNCTIONS
+#  FUNCTIONS
 ##############################
 
 
@@ -142,7 +142,7 @@ def main():
 
 
 ##############################
-#		MAIN
+#  MAIN
 ##############################
 
 
