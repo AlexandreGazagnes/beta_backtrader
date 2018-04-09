@@ -10,8 +10,8 @@
 ###############################
 
 
-
-# this is the object reprentation of a broker see doctstring bellow for full information
+# broker is the python object représentation of a real web broker
+# see full information in bellow docstring
 
 
 
@@ -21,12 +21,15 @@
 
 
 class Broker(object):
-    u"""Broker is a object that store important features of a web broker
+    u"""Broker is a object that simulate a real web broker
     usefull if you want to run a strategy on a dataset and explore how
     broker's conditions affect your results.
-    in a future version the object will be able to connect to the real broker's api
-    and manage connection to your account, consults your porfolio, download your trade history
-    and pass automatic/maunal orders
+    TO DO for future versions : 
+    -   be able to connect to the real broker's api
+        and manage connection to your account, consults your porfolio, download your trade history
+        and pass automatic/maunal orders
+    -   be able to dowload exact parameters from updated real web borker.
+        for instance brk = Broker.get_real("kraken")  
     """
 
     MIN = {"maker_fees": 0.0, "taker_fees": 0.001, "slipage": 0.002}
@@ -38,7 +41,7 @@ class Broker(object):
 
             positional arguments :
 
-            name        :       the arbitray name given to your broker's instance.
+            name        :       the arbitray name given to your broker's instance
                                 exemple : just "kraken" or bitfinex
                                 type str
 
@@ -49,7 +52,7 @@ class Broker(object):
             taker_fees  :       maker_fees = fees for limit order
                                 type float in [0.0 : 0003]
 
-           slipage      :       difference betwen the price you want/set order and the price your
+            slipage      :      difference betwen the price you want/set order and the price your
                                 broker pass the order
                                 WARNING : subejctive and not definitive version but slipage is a diffrenet notion when
                                 you pass a limit or a market order
@@ -64,6 +67,7 @@ class Broker(object):
 
         self.name = name
 
+        # validation of maker fees arguments regarding default and athorised values
         try:
             maker_fees = float(maker_fees)
             assert self.MIN["maker_fees"] <= maker_fees < self.MAX["maker_fees"]
@@ -73,6 +77,7 @@ class Broker(object):
                 "Broker.maker_fees : given {}, expected  float, min {}, max {}"
                 .format(maker_fees, self.MIN["maker_fees"], self.MAX["maker_fees"]))
 
+        # validation of taker fees arguments regarding default and athorised values
         try:
             taker_fees = float(taker_fees)
             assert self.MIN["taker_fees"] <= taker_fees < self.MAX["taker_fees"]
@@ -82,6 +87,7 @@ class Broker(object):
                 "Broker.taker_fees : given {}, expected  float, min {}, max {}"
                 .format(taker_fees, self.MIN["taker_fees"], self.MAX["taker_fees"]))
 
+        # validation of slipage arguments regarding default and athorised values
         try:
             slipage = float(slipage)
             assert self.MIN["slipage"] <= slipage < self.MAX["slipage"]
@@ -98,7 +104,7 @@ class Broker(object):
 #########################
 
 
-# default unitest work when ./broker.py called in CLI
+# this section should be founded in test/test_broker.py (with pytest usage)
 
 if __name__ == '__main__':
 
