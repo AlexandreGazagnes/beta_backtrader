@@ -11,11 +11,13 @@ As readability, take in hand and simplicity are main targets, it proposes on v_0
 
 ## VERSION
 0.0.1
+see branch dev/ for new features 
 <br><br>
 
 ##  LICENCE
 
-MIT License
+MIT License 
+will be changed to GNU General Public License v3.0 for v_0.1.0
 <br><br>
 
 ##  REQUIREMENTS
@@ -55,7 +57,7 @@ $
 ##  USAGE
 
 
-#### Library mode
+#### Framework / Library mode
 ```
 $
 ```
@@ -68,7 +70,7 @@ $
 
 ##  FOLDERS
 * _ beta_backtrader : contain core code, scripts and libraires, FEEL FREE TO READ NOT TO CHANGE
-* data datafiles : (ohlc format) to use from back trading instances
+* data : datafiles in ohlc format to use from back trading instances
 * docs : full documentation
 * examples : non exhaustive of list of examples and tutorials 
 * graphs : web browser graphics results from back trading instances
@@ -88,6 +90,7 @@ Staring and following also strongly recommended
   
 
 ## DEV
+* see list of dev in branch dev/
 <br><br>
 
 ##  DONATION
