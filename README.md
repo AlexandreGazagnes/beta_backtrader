@@ -12,12 +12,14 @@ As readability, take in hand and simplicity are main targets, it proposes on v_0
 ## VERSION
 0.0.1
 see branch dev/ for new features 
+
 <br><br>
 
 ##  LICENCE
 
 MIT License 
 will be changed to GNU General Public License v3.0 for v_0.1.0
+
 <br><br>
 
 ##  REQUIREMENTS
@@ -80,17 +82,20 @@ $
 * strategies : put here your strategies from back trading instances
 * tests : standard test collection
 * utils : various scripts to clean, merge, split, manipulate you data files
+
 <br><br>
 
 ##  CONTRIBUTING
 Feel free to submit any issues / pull resquest you want <p>
 Clone, download and fork at will <p>
 Staring and following also strongly recommended
+
 <br><br>
   
 
 ## DEV
 * see list of dev in branch dev/
+
 <br><br>
 
 ##  DONATION
